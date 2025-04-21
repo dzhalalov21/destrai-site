@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeStrAI — Mental Wellness with AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <header>
+        <h1 data-aos="fade-down">Добро пожаловать в DeStrAI</h1>
+        <div id="language-switcher">
+            <button onclick="setLanguage('ru')">Рус</button>
+            <button onclick="setLanguage('en')">Eng</button>
+            <button onclick="setLanguage('fr')">Fr</button>
+            <button onclick="setLanguage('de')">De</button>
+            <button onclick="setLanguage('ga')">Ga</button>
+            <button onclick="setLanguage('ar')">Ar</button>
+        </div>
+    </header>
+
+    <section data-aos="fade-up">
+        <p data-lang="ru">Привет! Я DeStrAI — твой AI помощник для душевного спокойствия.</p>
+        <p data-lang="en">Hi! I'm DeStrAI — your AI assistant for mental wellness.</p>
+        <p data-lang="fr">Salut! Je suis DeStrAI — ton assistant AI pour le bien-être mental.</p>
+        <p data-lang="de">Hallo! Ich bin DeStrAI — dein KI-Assistent für mentales Wohlbefinden.</p>
+        <p data-lang="ga">Dia duit! Is mise DeStrAI — do chúntóir AI le haghaidh folláine mheabhrach.</p>
+        <p data-lang="ar">مرحبًا! أنا DeStrAI — مساعدك الذكي للراحة النفسية.</p>
+    </section>
+
+    <section data-aos="fade-up">
+        <h2>Связаться с нами</h2>
+        <form action="https://formspree.io/f/mnqekayl" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="_replyto" placeholder="Email" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer data-aos="fade-in">
+        <p>© 2025 DeStrAI. Все права защищены.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+            });
+        }
+        setLanguage('ru');
+    </script>
+</body>
+</html>
