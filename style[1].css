@@ -1,44 +1,29 @@
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
-}
-header, footer {
-    background-color: #4a90e2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #5f72be, #9b23ea);
     color: white;
-    padding: 20px;
     text-align: center;
 }
-section {
-    padding: 20px;
+.logo {
+    width: 120px;
+    margin-top: 40px;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+header {
+    padding: 50px 20px;
 }
-input, textarea {
-    padding: 10px;
-    font-size: 16px;
-}
-button {
-    padding: 10px;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-#language-switcher button {
-    margin: 5px;
-    padding: 5px 10px;
-    font-weight: bold;
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
     background-color: white;
-    color: #4a90e2;
-    border: 2px solid #4a90e2;
-    cursor: pointer;
+    color: #5f72be;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cta-button:hover {
+    background-color: #eee;
 }
