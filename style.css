@@ -1,44 +1,95 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
-}
-header, footer {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-section {
-    padding: 20px;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-input, textarea {
-    padding: 10px;
-    font-size: 16px;
-}
-button {
-    padding: 10px;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-#language-switcher button {
-    margin: 5px;
-    padding: 5px 10px;
-    font-weight: bold;
-    background-color: white;
-    color: #4a90e2;
-    border: 2px solid #4a90e2;
-    cursor: pointer;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f5f7fa;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background-color: #357ab8;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .how-it-works {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .step {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .step img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .feature {
+            width: 48%;
+            background-color: #f5f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        .plan {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 40%;
+        }
+        .pro-plan {
+            border-color: #4a90e2;
+            background-color: #f5f9ff;
+        }
+        .telegram-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
